@@ -1,0 +1,36 @@
+{
+  "name": "glue-streams",
+  "version": "0.0.0",
+  "description": "Compose one stream from other streams, arrays or individual objects",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R spec -t 100"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:floatdrop/glue-streams.git"
+  },
+  "keywords": [
+    "stream",
+    "compose"
+  ],
+  "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/floatdrop/glue-streams/issues"
+  },
+  "homepage": "https://github.com/floatdrop/glue-streams",
+  "devDependencies": {
+    "mocha": "^1.21.4",
+    "should": "^4.0.4",
+    "stream-assert": "^1.0.1"
+  },
+  "dependencies": {
+    "isstream": "^0.1.0",
+    "multistream": "^1.4.2",
+    "stream-array": "^0.1.3"
+  }
+}
