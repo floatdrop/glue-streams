@@ -6,6 +6,18 @@ var array = require('stream-array');
 require('should');
 
 describe('glue', function () {
+    it('should join buffer chunks', function (done) {
+        glue('A', 'B')
+            .pipe(assert.length(2))
+            .on('end', done);
+    });
+
+    it('should throw, when getting functions', function () {
+        (function () {
+            glue.obj(function () { });
+        }).should.throw();
+    });
+
     it('should glue objects into array stream', function (done) {
         glue.obj({}, {})
             .pipe(assert.length(2))

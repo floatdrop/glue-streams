@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -R spec -t 100"
+    "test": "mocha -R spec -t 100",
+    "coverage": "istanbul cover _mocha -- -R spec"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,9 @@
   "devDependencies": {
     "mocha": "^1.21.4",
     "should": "^4.0.4",
-    "stream-assert": "^1.0.1"
+    "stream-assert": "^1.0.1",
+    "istanbul": "*",
+    "mocha-lcov-reporter": "*"
   },
   "dependencies": {
     "isstream": "^0.1.0",
