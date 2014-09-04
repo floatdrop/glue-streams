@@ -4,6 +4,8 @@
 
 Compose one stream from other streams, arrays or individual objects.
 
+Based on [`multistream`](https://github.com/feross/multistream) :cat:
+
 ## Usage
 
 ```js
