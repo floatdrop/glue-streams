@@ -39,8 +39,7 @@ Returns stream that will emit objects from passed streams.
 
  * Readable stream object
  * Ordinary object
- * Array of objects / streams
- * Functions, that will be executed, when all streams before is ended. Returned object will be streamed by previous rules.
+ * Array of objects
 
 ### glue.obj(streams...)
 
